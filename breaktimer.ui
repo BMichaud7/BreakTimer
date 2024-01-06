@@ -18,14 +18,20 @@
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Break Time (minutes):</string>
+       <string>Next break:</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QSpinBox" name="breakTimeSpinBox">
+      <property name="minimum">
+       <number>0</number>
+      </property>
       <property name="maximum">
-       <number>60</number>
+       <number>300</number>
+      </property>
+      <property name="singleStep">
+       <number>15</number>
       </property>
      </widget>
     </item>
